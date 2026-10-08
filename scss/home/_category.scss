@@ -1,0 +1,36 @@
+.category {
+    padding: 8rem 2rem;
+
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 3.5rem;
+    }
+
+    &__img-box {
+        text-align: center;
+        padding: 4rem;
+        border: 1px solid rgb(119, 113, 113);
+        border-radius: 0.5rem;
+
+        span {
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 1.4rem;
+            color: rgb(119, 113, 113);
+        }
+
+        img {
+            width: 5rem;
+        }
+    }
+
+    &__active {
+        background-color: rgb(206, 56, 56);
+
+        span {
+            color: white;
+        }
+    }
+}
