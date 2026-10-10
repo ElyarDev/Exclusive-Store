@@ -1,0 +1,34 @@
+.cta {
+    padding: 5.6rem 2rem 0 2rem;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    border-radius: 1.5rem;
+
+    &__text-box {
+        padding: 0 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 6rem;
+    }
+
+    &__title {
+        color: #00FF66;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    &__text {
+        font-size: 4.8rem;
+        font-weight: 600;
+        color: white;
+    }
+
+    &__img-box {
+        img {
+            width: 80%;
+        }
+    }
+}
