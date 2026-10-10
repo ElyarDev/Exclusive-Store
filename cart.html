@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+
+    <!-- css  -->
+    <link rel="stylesheet" href="scss/main.css">
+
+</head>
+
+<body>
+    <main class="cart-page">
+        <div class="cart-page__container">
+
+            <!-- Breadcrumb -->
+            <nav class="cart-page__breadcrumb">
+                <a href="index.html" class="cart-page__breadcrumb-link">
+                    Home
+                </a>
+
+                <span class="cart-page__breadcrumb-separator">/</span>
+
+                <span class="cart-page__breadcrumb-current">
+                    Cart
+                </span>
+            </nav>
+
+            <!-- Cart Table -->
+            <section class="cart">
+                <div class="cart__table">
+
+                    <!-- Table Header -->
+                    <div class="cart__header">
+                        <span class="cart__heading cart__heading--product">
+                            Product
+                        </span>
+
+                        <span class="cart__heading">
+                            Price
+                        </span>
+
+                        <span class="cart__heading">
+                            Quantity
+                        </span>
+
+                        <span class="cart__heading">
+                            Subtotal
+                        </span>
+                    </div>
+
+                    <!-- Product 1 -->
+                    <article class="cart__item">
+
+                        <div class="cart__product">
+                            <button class="cart__remove" type="button" aria-label="Remove LCD Monitor">
+                                &times;
+                            </button>
+
+                            <img src="assets/images/monitor.png" alt="LCD Monitor" class="cart__image" />
+
+                            <span class="cart__product-name">
+                                LCD Monitor
+                            </span>
+                        </div>
+
+                        <span class="cart__price">
+                            $650
+                        </span>
+
+                        <div class="cart__quantity">
+                            <input class="cart__quantity-input" type="number" min="1" value="1"
+                                aria-label="LCD Monitor quantity" />
+                        </div>
+
+                        <span class="cart__subtotal">
+                            $650
+                        </span>
+
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="cart__item">
+
+                        <div class="cart__product">
+                            <button class="cart__remove" type="button" aria-label="Remove HI Gamepad">
+                                &times;
+                            </button>
+
+                            <img src="assets/images/gamepad.png" alt="HI Gamepad" class="cart__image" />
+
+                            <span class="cart__product-name">
+                                HI Gamepad
+                            </span>
+                        </div>
+
+                        <span class="cart__price">
+                            $550
+                        </span>
+
+                        <div class="cart__quantity">
+                            <input class="cart__quantity-input" type="number" min="1" value="2"
+                                aria-label="HI Gamepad quantity" />
+                        </div>
+
+                        <span class="cart__subtotal">
+                            $1100
+                        </span>
+
+                    </article>
+
+                </div>
+
+                <!-- Cart Actions -->
+                <div class="cart__actions">
+                    <a href="shop.html" class="cart__button cart__button--outline">
+                        Return To Shop
+                    </a>
+
+                    <button class="cart__button cart__button--outline" type="button">
+                        Update Cart
+                    </button>
+                </div>
+
+                <!-- Cart Bottom -->
+                <div class="cart__bottom">
+
+                    <!-- Coupon -->
+                    <form class="cart__coupon">
+                        <label class="cart__coupon-label" for="coupon-code">
+                            Coupon Code
+                        </label>
+
+                        <input class="cart__coupon-input" id="coupon-code" type="text" placeholder="Coupon Code" />
+
+                        <button class="cart__button cart__button--primary" type="button">
+                            Apply Coupon
+                        </button>
+                    </form>
+
+                    <!-- Cart Total -->
+                    <aside class="cart__summary">
+
+                        <h2 class="cart__summary-title">
+                            Cart Total
+                        </h2>
+
+                        <div class="cart__summary-row">
+                            <span>Subtotal:</span>
+                            <span>$1750</span>
+                        </div>
+
+                        <div class="cart__summary-row">
+                            <span>Shipping:</span>
+                            <span>Free</span>
+                        </div>
+
+                        <div class="cart__summary-row cart__summary-row--total">
+                            <span>Total:</span>
+                            <span>$1750</span>
+                        </div>
+
+                        <a href="checkout.html" class="cart__checkout">
+                            Proceed to checkout
+                        </a>
+
+                    </aside>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
