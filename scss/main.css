@@ -507,7 +507,7 @@ h5 {
   width: min(100% - 4rem, 117rem);
   min-height: 51rem;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 4rem 2rem;
 }
 .auth__visual {
   display: flex;
@@ -534,31 +534,25 @@ h5 {
 }
 .auth-form__title {
   margin-bottom: 0.7rem;
-  font-size: 2.7rem;
+  font-size: 3.2rem;
   font-weight: 500;
   line-height: 1.25;
 }
 .auth-form__subtitle {
   margin-bottom: 3rem;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 .auth-form__footer {
   margin-top: 2rem;
   color: #999;
   text-align: center;
-  font-size: 1.1rem;
-}
-.auth-form__footer a {
-  margin-left: 0.7rem;
-  padding-bottom: 0.2rem;
-  color: #111;
-  border-bottom: 1px solid #999;
+  font-size: 1.5rem;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 .form__field {
   display: block;
@@ -572,8 +566,8 @@ h5 {
   outline: 0;
   color: #111;
   background: transparent;
-  font-size: 1.2rem;
-  transition: border-color 0.2s ease;
+  font-size: 1.4rem;
+  transition: all 0.2s ease;
 }
 .form__input:focus {
   border-color: #000;
@@ -583,37 +577,6 @@ h5 {
 }
 .form__input::placeholder {
   color: #9b9b9b;
-}
-
-.subscribe {
-  display: flex;
-  width: 100%;
-  max-width: 19rem;
-  height: 3.1rem;
-  border: 1px solid #777;
-}
-.subscribe__input {
-  min-width: 0;
-  flex: 1;
-  padding: 0 0.8rem;
-  border: 0;
-  outline: 0;
-  color: #fff;
-  background: transparent;
-  font-size: 0.9rem;
-}
-.subscribe__input::-moz-placeholder {
-  color: #aaa;
-}
-.subscribe__input::placeholder {
-  color: #aaa;
-}
-.subscribe__button {
-  width: 3.2rem;
-  border: 0;
-  color: #fff;
-  background: transparent;
-  font-size: 1.8rem;
 }
 
 @media (max-width: 900px) {
