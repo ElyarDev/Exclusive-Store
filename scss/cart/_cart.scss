@@ -1,38 +1,9 @@
-// ========================================
-// CART PAGE
-// ========================================
-
-$color-primary: #db4444;
-$color-primary-dark: #c73535;
-$color-black: #000;
-$color-white: #fff;
-$color-text: #222;
-$color-muted: #777;
-$color-border: #a3a3a3;
-$color-background: #fff;
-
-$container-width: 130rem;
-$transition: all 0.3s ease;
-
-
-// ========================================
-// CART PAGE LAYOUT
-// ========================================
-
 .cart-page {
-    width: 100%;
-    min-height: 100vh;
     padding: 2rem 2.4rem 8rem;
-    background-color: $color-background;
-    color: $color-text;
+    background-color: $color-white;
+    color: $color-black;
     font-family: inherit;
     font-size: 1.4rem;
-
-    &__container {
-        width: 100%;
-        max-width: $container-width;
-        margin: 0 auto;
-    }
 
     &__breadcrumb {
         display: flex;
@@ -43,9 +14,9 @@ $transition: all 0.3s ease;
     }
 
     &__breadcrumb-link {
-        color: $color-muted;
+        color: $color-light-3;
         text-decoration: none;
-        transition: $transition;
+        transition: all 0.3s ease;
 
         &:hover {
             color: $color-primary;
@@ -53,18 +24,13 @@ $transition: all 0.3s ease;
     }
 
     &__breadcrumb-separator {
-        color: $color-muted;
+        color: $color-light-3;
     }
 
     &__breadcrumb-current {
         color: $color-black;
     }
 }
-
-
-// ========================================
-// CART TABLE
-// ========================================
 
 .cart {
     width: 100%;
@@ -96,8 +62,8 @@ $transition: all 0.3s ease;
 
     &__heading {
         color: $color-black;
-        font-size: 1.2rem;
-        font-weight: 500;
+        font-size: 2rem;
+        font-weight: 600;
         text-align: center;
 
         &:first-child {
@@ -126,41 +92,40 @@ $transition: all 0.3s ease;
     &__image {
         display: block;
         flex-shrink: 0;
-        width: 4.8rem;
-        height: 4.8rem;
+        width: 6rem;
+        height: 6rem;
         object-fit: contain;
     }
 
     &__product-name {
         color: $color-black;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         font-weight: 400;
         line-height: 1.5;
     }
 
     &__remove {
         position: absolute;
-        top: -0.4rem;
+        top: -1rem;
         left: -0.8rem;
         z-index: 1;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 1.5rem;
-        height: 1.5rem;
-        padding: 0;
+        width: 2rem;
+        height: 2rem;
         border: none;
         border-radius: 50%;
         background-color: $color-primary;
         color: $color-white;
         font-family: inherit;
-        font-size: 1.5rem;
+        font-size: 2rem;
         line-height: 1;
         cursor: pointer;
-        transition: $transition;
+        transition: all 0.3s ease;
 
         &:hover {
-            background-color: $color-primary-dark;
+            background-color: $color-primary-active;
             transform: scale(1.1);
         }
     }
@@ -170,13 +135,11 @@ $transition: all 0.3s ease;
     &__price,
     &__subtotal {
         color: $color-black;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         font-weight: 400;
         text-align: center;
         white-space: nowrap;
     }
-
-    // Quantity input
 
     &__quantity {
         display: flex;
@@ -188,7 +151,7 @@ $transition: all 0.3s ease;
         width: 5.2rem;
         height: 3.4rem;
         padding: 0.4rem 0.5rem;
-        border: 0.1rem solid $color-border;
+        border: 0.1rem solid $color-light-2;
         border-radius: 0.4rem;
         outline: none;
         background-color: $color-white;
@@ -196,16 +159,12 @@ $transition: all 0.3s ease;
         font-family: inherit;
         font-size: 1.2rem;
         text-align: center;
-        transition: $transition;
+        transition: all 0.3s ease;
 
         &:focus {
             border-color: $color-primary;
         }
     }
-
-    // ======================================
-    // CART BUTTONS
-    // ======================================
 
     &__actions {
         display: flex;
@@ -230,10 +189,10 @@ $transition: all 0.3s ease;
         text-decoration: none;
         white-space: nowrap;
         cursor: pointer;
-        transition: $transition;
+        transition: all 0.3s ease;
 
         &--outline {
-            border-color: $color-border;
+            border-color: $color-light-2;
             background-color: $color-white;
             color: $color-black;
 
@@ -249,14 +208,10 @@ $transition: all 0.3s ease;
             color: $color-white;
 
             &:hover {
-                background-color: $color-primary-dark;
+                background-color: $color-primary-active;
             }
         }
     }
-
-    // ======================================
-    // COUPON AND SUMMARY
-    // ======================================
 
     &__bottom {
         display: grid;
@@ -371,11 +326,8 @@ $transition: all 0.3s ease;
     }
 }
 
-
-// ========================================
-// RESPONSIVE — TABLET
-// ========================================
-
+// RESPONSIVE
+// TABLET
 @media (max-width: 62.5em) {
     .cart-page {
         padding-right: 2rem;
@@ -423,11 +375,7 @@ $transition: all 0.3s ease;
     }
 }
 
-
-// ========================================
-// RESPONSIVE — MOBILE
-// ========================================
-
+// MOBILE
 @media (max-width: 40em) {
     .cart-page {
         padding: 1.6rem 1.2rem 4rem;
@@ -548,11 +496,7 @@ $transition: all 0.3s ease;
     }
 }
 
-
-// ========================================
-// RESPONSIVE — SMALL MOBILE
-// ========================================
-
+// SMALL MOBILE
 @media (max-width: 23.5em) {
     .cart {
         &__actions {
