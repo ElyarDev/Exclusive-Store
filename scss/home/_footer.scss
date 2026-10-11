@@ -1,7 +1,7 @@
 .footer {
     padding: 6rem 2rem 0 2rem;
     margin-top: 5rem;
-    background-color: black;
+    background-color: $color-black;
 
     &__box {
         display: grid;
@@ -16,12 +16,12 @@
         display: block;
         font-size: 2rem;
         font-weight: 600rem;
-        color: white;
+        color: $color-white;
         margin-bottom: 2rem;
     }
 
     &__list {
-        color: white;
+        color: $color-white;
         display: flex;
         flex-direction: column;
         gap: 2.4rem;

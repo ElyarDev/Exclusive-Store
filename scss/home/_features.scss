@@ -18,7 +18,7 @@
         position: relative;
         isolation: isolate;
 
-        background-color: black;
+        background-color: $color-black;
         width: 13rem;
         height: 13rem;
         display: flex;
@@ -38,7 +38,7 @@
 
         i {
             font-size: 6rem;
-            color: white;
+            color: $color-white;
         }
     }
 

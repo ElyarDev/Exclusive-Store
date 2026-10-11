@@ -10,7 +10,7 @@
     &__img-box {
         text-align: center;
         padding: 4rem;
-        border: 1px solid rgb(119, 113, 113);
+        border: 1px solid $color-light-3;
         border-radius: 0.5rem;
 
         span {
@@ -18,7 +18,7 @@
             text-align: center;
             margin-top: 1rem;
             font-size: 1.4rem;
-            color: rgb(119, 113, 113);
+            color: $color-light-3;
         }
 
         img {
@@ -27,10 +27,10 @@
     }
 
     &__active {
-        background-color: rgb(206, 56, 56);
+        background-color: $color-primary-active;
 
         span {
-            color: white;
+            color: $color-white;
         }
     }
 }
