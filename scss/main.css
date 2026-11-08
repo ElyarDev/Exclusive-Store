@@ -362,6 +362,12 @@ h5 {
 .category__img-box img {
   width: 5rem;
 }
+.category__img-box:hover {
+  background-color: #ce3838;
+}
+.category__img-box:hover span {
+  color: #ffffff;
+}
 .category__active {
   background-color: #ce3838;
 }

@@ -24,6 +24,14 @@
         img {
             width: 5rem;
         }
+
+        &:hover {
+            background-color: $color-primary-active;
+
+            span {
+                color: $color-white;
+            }
+        }
     }
 
     &__active {
